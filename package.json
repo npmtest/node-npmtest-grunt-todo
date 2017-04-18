@@ -1,1 +1,40 @@
-{     "devDependencies": {         "grunt-todo": "*",         "electron-lite": "kaizhu256/node-electron-lite#alpha",         "utility2": "kaizhu256/node-utility2#alpha"     },     "name":"npmtest-grunt-todo",     "homepage": "https://github.com/npmtest/node-npmtest-grunt-todo",     "repository": {         "type": "git",         "url": "https://github.com/npmtest/node-npmtest-grunt-todo.git"     },     "scripts": {         "build-ci": "utility2 shReadmeTest build_ci.sh"     },     "version": "0.0.1" }
+{
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "description": "#### test coverage for  [grunt-todo (v0.5.0)](https://github.com/leny/grunt-todo)  [![npm package](https://img.shields.io/npm/v/npmtest-grunt-todo.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-grunt-todo) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-grunt-todo.svg)](https://travis-ci.org/npmtest/node-npmtest-grunt-todo)",
+    "devDependencies": {
+        "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "grunt-todo": "*",
+        "utility2": "kaizhu256/node-utility2#alpha"
+    },
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmtest/node-npmtest-grunt-todo",
+    "keywords": [
+        "coverage",
+        "test",
+        "grunt-todo"
+    ],
+    "license": "MIT",
+    "main": "lib.npmtest_grunt_todo.js",
+    "name": "npmtest-grunt-todo",
+    "nameAlias": "npmtest_grunt_todo",
+    "nameOriginal": "npmtest-grunt-todo",
+    "os": [
+        "darwin",
+        "linux"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/npmtest/node-npmtest-grunt-todo.git"
+    },
+    "scripts": {
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "npm install \"kaizhu256/node-utility2#alpha\" && utility2 shDeployHeroku",
+        "postinstall": "[ ! -f npm_scripts.sh ] || ./npm_scripts.sh postinstall",
+        "start": "PORT=${PORT:-8080} utility2 start test.js",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
+    },
+    "version": "0.0.1"
+}
