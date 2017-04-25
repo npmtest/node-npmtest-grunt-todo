@@ -1,6 +1,6 @@
 # npmtest-grunt-todo
 
-#### test coverage for  [grunt-todo (v0.5.0)](https://github.com/leny/grunt-todo)  [![npm package](https://img.shields.io/npm/v/npmtest-grunt-todo.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-grunt-todo) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-grunt-todo.svg)](https://travis-ci.org/npmtest/node-npmtest-grunt-todo)
+#### basic test coverage for  [grunt-todo (v0.5.0)](https://github.com/leny/grunt-todo)  [![npm package](https://img.shields.io/npm/v/npmtest-grunt-todo.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-grunt-todo) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-grunt-todo.svg)](https://travis-ci.org/npmtest/node-npmtest-grunt-todo)
 
 #### Find TODO, FIXME and NOTE inside project files
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-grunt-todo/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-grunt-todo/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-grunt-todo/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-grunt-todo/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-grunt-todo/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-grunt-todo/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-grunt-todo/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-grunt-todo/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-grunt-todo/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-grunt-todo/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-grunt-todo/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-grunt-todo/build/coverage.html/index.html)
 
@@ -113,7 +113,8 @@
         "url": "git://github.com/leny/grunt-todo.git"
     },
     "scripts": {},
-    "version": "0.5.0"
+    "version": "0.5.0",
+    "bin": {}
 }
 ```
 
